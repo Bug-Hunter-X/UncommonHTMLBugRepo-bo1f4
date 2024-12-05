@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML bug related to accessing properties of elements before they are fully rendered in the DOM. The bug is in bug.html and a solution is provided in solution.html.  The issue arises because JavaScript attempts to access a property of an element that doesn't yet exist in the DOM's object hierarchy.
