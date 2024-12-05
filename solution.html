@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Ensure the element is in the DOM before accessing it
+    document.addEventListener('DOMContentLoaded', function() {
+      let element = document.getElementById('myDiv');
+      // Check if the property exists before accessing it
+      if (element.hasOwnProperty('textContent')) {
+        console.log(element.textContent); 
+      } else {
+        console.log('Property does not exist');
+      }
+    });
+  </script>
+</body>
+</html>
